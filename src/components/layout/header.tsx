@@ -32,6 +32,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { name: "Home", href: "/" },
   ...CATEGORIES.map((c) => ({ name: c.name, href: `/category/${c.slug}` })),
+  { name: "Characters", href: "/characters" },
 ];
 
 export function Header() {

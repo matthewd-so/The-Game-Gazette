@@ -60,14 +60,14 @@ export default function GeneratePage() {
         </CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground mb-4">
-            Trigger the AI content pipeline manually. This will research
-            trending games and news, then generate 3-5 articles as drafts.
+            Trigger the AI content pipeline manually. This will scrape
+            trending Reddit posts and gaming news, then generate 10 articles as drafts.
             Articles will appear in the approval queue for review before
             publishing.
           </p>
           <p className="text-sm text-muted-foreground mb-6">
-            This process typically takes 2-3 minutes and uses approximately
-            $2-5 in API credits.
+            This process typically takes 3-5 minutes. Stories come from Reddit
+            (r/gaming, r/Games, etc.) and major gaming news outlets.
           </p>
           <Button
             onClick={handleGenerate}
